@@ -14,6 +14,11 @@ def hello_http():
     return make_response("ping")
 
 
+@app.route("/hw_proxy/zkteko", methods=["GET"])
+def zkteko():
+    return make_response("testing")
+
+
 @app.route("/hw_proxy/handshake", methods=["POST", "GET", "PUT"])
 def handshake_json():
     return jsonify(jsonrpc="2.0", result=True)
