@@ -27,7 +27,7 @@ jobs:
           virtualenv venv
           ./venv/Scripts/activate
           python -m pip install -r windows/requirements.txt
-          python -m pip install pyinstaller
+          python -m pip install pyinstaller==5.13.0
           python -m pip install .
       - name: Build
         run: |
